@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Students </title>
+</head>
+<body>
+<tr th:each="student: ${students}">
+    <td th:text="${student.name}"></td>
+    <td th:text="${student.rollNumber}"></td>
+    <td th:text="${student.gender}"></td>
+    <td>
+        <span th:if="${student.gender} == 'M'" th:text="Male"></span>
+        <span th:unless="${student.gender} == 'M'" th:text="Female"></span>
+    </td>
+    </br>
+</tr>
+</body>
+</html>
