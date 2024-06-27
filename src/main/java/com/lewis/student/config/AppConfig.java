@@ -9,7 +9,7 @@ import java.util.ArrayList;
 @Configuration
 public class AppConfig {
 
-    @Bean
+    @Bean (name="arraylist-of-students")
     public ArrayList<Student> buildStudents(){
         System.out.println("Building Student List...");
         ArrayList<Student> students = new ArrayList<>();
