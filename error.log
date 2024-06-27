@@ -1,0 +1,234 @@
+2024-06-27T15:40:14.601-04:00  INFO 26860 --- [Student] [restartedMain] com.lewis.student.StudentApplication     : Starting StudentApplication using Java 17.0.8.1 with PID 26860 (C:\Users\LaTonyaLewis\Documents\Student\target\classes started by LaTonyaLewis in C:\Users\LaTonyaLewis\Documents\Student)
+2024-06-27T15:40:14.602-04:00  INFO 26860 --- [Student] [restartedMain] com.lewis.student.StudentApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-27T15:40:15.240-04:00  INFO 26860 --- [Student] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27T15:40:15.254-04:00  INFO 26860 --- [Student] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2024-06-27T15:40:15.577-04:00  INFO 26860 --- [Student] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-27T15:40:15.578-04:00  INFO 26860 --- [Student] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-27T15:40:15.579-04:00  INFO 26860 --- [Student] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-06-27T15:40:15.638-04:00  INFO 26860 --- [Student] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-27T15:40:15.638-04:00  INFO 26860 --- [Student] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1033 ms
+2024-06-27T15:40:16.017-04:00  INFO 26860 --- [Student] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27T15:40:16.023-04:00  INFO 26860 --- [Student] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-27T15:40:16.053-04:00  INFO 26860 --- [Student] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-27T15:40:16.055-04:00  INFO 26860 --- [Student] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-06-27T15:40:16.063-04:00  INFO 26860 --- [Student] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e27ae71
+2024-06-27T15:40:16.063-04:00  INFO 26860 --- [Student] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-06-27T15:40:16.064-04:00  WARN 26860 --- [Student] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-27T15:40:16.064-04:00  WARN 26860 --- [Student] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-27T15:40:16.138-04:00  INFO 26860 --- [Student] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-27T15:40:16.155-04:00  INFO 26860 --- [Student] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27T15:40:16.494-04:00  WARN 26860 --- [Student] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27T15:40:17.567-04:00  INFO 26860 --- [Student] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-27T15:40:17.581-04:00  INFO 26860 --- [Student] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-06-27T15:40:17.653-04:00  INFO 26860 --- [Student] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-27T15:40:17.669-04:00  INFO 26860 --- [Student] [restartedMain] com.lewis.student.StudentApplication     : Started StudentApplication in 3.144 seconds (process running for 292.469)
+2024-06-27T15:40:17.680-04:00  INFO 26860 --- [Student] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name error.log (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-06-27T15:40:49.941-04:00  INFO 26860 --- [Student] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27T15:40:49.943-04:00  INFO 26860 --- [Student] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-06-27T15:40:49.949-04:00  INFO 26860 --- [Student] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-06-27T15:40:58.151-04:00  INFO 24868 --- [Student] [restartedMain] com.lewis.student.StudentApplication     : Starting StudentApplication using Java 17.0.8.1 with PID 24868 (C:\Users\LaTonyaLewis\Documents\Student\target\classes started by LaTonyaLewis in C:\Users\LaTonyaLewis\Documents\Student)
+2024-06-27T15:40:58.159-04:00  INFO 24868 --- [Student] [restartedMain] com.lewis.student.StudentApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-27T15:40:58.243-04:00  INFO 24868 --- [Student] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-27T15:40:58.244-04:00  INFO 24868 --- [Student] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-27T15:41:01.041-04:00  INFO 24868 --- [Student] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27T15:41:01.166-04:00  INFO 24868 --- [Student] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interface.
+2024-06-27T15:41:03.070-04:00  INFO 24868 --- [Student] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-27T15:41:03.091-04:00  INFO 24868 --- [Student] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-27T15:41:03.091-04:00  INFO 24868 --- [Student] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-06-27T15:41:03.211-04:00  INFO 24868 --- [Student] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-27T15:41:03.215-04:00  INFO 24868 --- [Student] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4969 ms
+2024-06-27T15:41:04.025-04:00  INFO 24868 --- [Student] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27T15:41:04.181-04:00  INFO 24868 --- [Student] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-27T15:41:04.276-04:00  INFO 24868 --- [Student] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-27T15:41:05.010-04:00  INFO 24868 --- [Student] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-27T15:41:05.076-04:00  INFO 24868 --- [Student] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-27T15:41:05.379-04:00  INFO 24868 --- [Student] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72a3375b
+2024-06-27T15:41:05.384-04:00  INFO 24868 --- [Student] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-27T15:41:05.420-04:00  WARN 24868 --- [Student] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-27T15:41:05.422-04:00  WARN 24868 --- [Student] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-27T15:41:07.233-04:00  INFO 24868 --- [Student] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-27T15:41:07.339-04:00  INFO 24868 --- [Student] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27T15:41:08.114-04:00  WARN 24868 --- [Student] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27T15:41:10.251-04:00  INFO 24868 --- [Student] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-27T15:41:10.281-04:00  INFO 24868 --- [Student] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-06-27T15:41:10.531-04:00  INFO 24868 --- [Student] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-27T15:41:10.563-04:00  INFO 24868 --- [Student] [restartedMain] com.lewis.student.StudentApplication     : Started StudentApplication in 13.35 seconds (process running for 15.226)
+2024-06-27T15:41:11.172-04:00  INFO 24868 --- [Student] [RMI TCP Connection(3)-10.0.0.249] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27T15:41:11.173-04:00  INFO 24868 --- [Student] [RMI TCP Connection(3)-10.0.0.249] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-27T15:41:11.179-04:00  INFO 24868 --- [Student] [RMI TCP Connection(3)-10.0.0.249] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-06-27T15:42:23.982-04:00  WARN 24868 --- [Student] [http-nio-8080-exec-1] c.l.s.c.StudentDBRestController          : enter hello...
+2024-06-27T15:42:23.983-04:00  INFO 24868 --- [Student] [http-nio-8080-exec-1] c.l.s.c.StudentDBRestController          : Simple log statement with inputs 1, 2 and 3
+2024-06-27T15:42:23.983-04:00 ERROR 24868 --- [Student] [http-nio-8080-exec-1] c.l.s.c.StudentDBRestController          : This is an error log example
+2024-06-27T15:42:23.984-04:00  WARN 24868 --- [Student] [http-nio-8080-exec-1] c.l.s.c.StudentDBRestController          : This is a warn log example
+2024-06-27T15:44:43.286-04:00  INFO 24868 --- [Student] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-06-27T15:44:43.458-04:00  INFO 24868 --- [Student] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27T15:44:43.473-04:00  INFO 24868 --- [Student] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-27T15:44:43.498-04:00  INFO 24868 --- [Student] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-27T15:44:43.770-04:00  INFO 24868 --- [Student] [restartedMain] com.lewis.student.StudentApplication     : Starting StudentApplication using Java 17.0.8.1 with PID 24868 (C:\Users\LaTonyaLewis\Documents\Student\target\classes started by LaTonyaLewis in C:\Users\LaTonyaLewis\Documents\Student)
+2024-06-27T15:44:43.770-04:00  INFO 24868 --- [Student] [restartedMain] com.lewis.student.StudentApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-27T15:44:44.684-04:00  INFO 24868 --- [Student] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27T15:44:44.706-04:00  INFO 24868 --- [Student] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
+2024-06-27T15:44:45.125-04:00  INFO 24868 --- [Student] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-27T15:44:45.127-04:00  INFO 24868 --- [Student] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-27T15:44:45.127-04:00  INFO 24868 --- [Student] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-06-27T15:44:45.190-04:00  INFO 24868 --- [Student] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-27T15:44:45.191-04:00  INFO 24868 --- [Student] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1416 ms
+2024-06-27T15:44:45.525-04:00  INFO 24868 --- [Student] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27T15:44:45.530-04:00  INFO 24868 --- [Student] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-27T15:44:45.567-04:00  INFO 24868 --- [Student] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-27T15:44:45.569-04:00  INFO 24868 --- [Student] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-06-27T15:44:45.581-04:00  INFO 24868 --- [Student] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@349c21c4
+2024-06-27T15:44:45.583-04:00  INFO 24868 --- [Student] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-06-27T15:44:45.584-04:00  WARN 24868 --- [Student] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-27T15:44:45.584-04:00  WARN 24868 --- [Student] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-27T15:44:45.655-04:00  INFO 24868 --- [Student] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-27T15:44:45.687-04:00  INFO 24868 --- [Student] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27T15:44:46.002-04:00  WARN 24868 --- [Student] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27T15:44:47.029-04:00  INFO 24868 --- [Student] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-27T15:44:47.038-04:00  INFO 24868 --- [Student] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-06-27T15:44:47.138-04:00  INFO 24868 --- [Student] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-27T15:44:47.177-04:00  INFO 24868 --- [Student] [restartedMain] com.lewis.student.StudentApplication     : Started StudentApplication in 3.477 seconds (process running for 231.84)
+2024-06-27T15:44:47.183-04:00  INFO 24868 --- [Student] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-06-27T15:46:02.604-04:00  INFO 24868 --- [Student] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-06-27T15:46:02.729-04:00  INFO 24868 --- [Student] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27T15:46:02.733-04:00  INFO 24868 --- [Student] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-06-27T15:46:02.740-04:00  INFO 24868 --- [Student] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-06-27T15:46:02.896-04:00  INFO 24868 --- [Student] [restartedMain] com.lewis.student.StudentApplication     : Starting StudentApplication using Java 17.0.8.1 with PID 24868 (C:\Users\LaTonyaLewis\Documents\Student\target\classes started by LaTonyaLewis in C:\Users\LaTonyaLewis\Documents\Student)
+2024-06-27T15:46:02.898-04:00  INFO 24868 --- [Student] [restartedMain] com.lewis.student.StudentApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-27T15:46:03.914-04:00  INFO 24868 --- [Student] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27T15:46:03.921-04:00  INFO 24868 --- [Student] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2024-06-27T15:46:04.591-04:00  INFO 24868 --- [Student] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-27T15:46:04.593-04:00  INFO 24868 --- [Student] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-27T15:46:04.593-04:00  INFO 24868 --- [Student] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-06-27T15:46:04.663-04:00  INFO 24868 --- [Student] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-27T15:46:04.663-04:00  INFO 24868 --- [Student] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1760 ms
+2024-06-27T15:46:05.181-04:00  INFO 24868 --- [Student] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27T15:46:05.194-04:00  INFO 24868 --- [Student] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-27T15:46:05.209-04:00  INFO 24868 --- [Student] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-27T15:46:05.211-04:00  INFO 24868 --- [Student] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-06-27T15:46:05.228-04:00  INFO 24868 --- [Student] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f87a9c8
+2024-06-27T15:46:05.229-04:00  INFO 24868 --- [Student] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-06-27T15:46:05.229-04:00  WARN 24868 --- [Student] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-27T15:46:05.229-04:00  WARN 24868 --- [Student] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-27T15:46:05.285-04:00  INFO 24868 --- [Student] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-27T15:46:05.322-04:00  INFO 24868 --- [Student] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27T15:46:05.361-04:00  WARN 24868 --- [Student] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentDBRestController' defined in file [C:\Users\LaTonyaLewis\Documents\Student\target\classes\com\lewis\student\controller\StudentDBRestController.class]: Post-processing of merged bean definition failed
+2024-06-27T15:46:05.361-04:00  INFO 24868 --- [Student] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27T15:46:05.362-04:00  INFO 24868 --- [Student] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-06-27T15:46:05.388-04:00  INFO 24868 --- [Student] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-06-27T15:46:05.390-04:00  INFO 24868 --- [Student] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-27T15:46:05.409-04:00  INFO 24868 --- [Student] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-27T15:46:05.458-04:00 ERROR 24868 --- [Student] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentDBRestController' defined in file [C:\Users\LaTonyaLewis\Documents\Student\target\classes\com\lewis\student\controller\StudentDBRestController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.1.jar:3.3.1]
+	at com.lewis.student.StudentApplication.main(StudentApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.1.jar:3.3.1]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.lewis.student.controller.StudentDBRestController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@520b4fd3]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:757) ~[spring-core-6.1.10.jar:6.1.10]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689) ~[spring-core-6.1.10.jar:6.1.10]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:436) ~[spring-orm-6.1.10.jar:6.1.10]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:417) ~[spring-orm-6.1.10.jar:6.1.10]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:376) ~[spring-orm-6.1.10.jar:6.1.10]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:353) ~[spring-orm-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1085) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:574) ~[spring-beans-6.1.10.jar:6.1.10]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/lewis/student/service/StudentDBService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:752) ~[spring-core-6.1.10.jar:6.1.10]
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.lewis.student.service.StudentDBService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.3.1.jar:3.3.1]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	... 31 common frames omitted
+
+2024-06-27T15:46:10.723-04:00  INFO 24868 --- [Student] [restartedMain] com.lewis.student.StudentApplication     : Starting StudentApplication using Java 17.0.8.1 with PID 24868 (C:\Users\LaTonyaLewis\Documents\Student\target\classes started by LaTonyaLewis in C:\Users\LaTonyaLewis\Documents\Student)
+2024-06-27T15:46:10.725-04:00  INFO 24868 --- [Student] [restartedMain] com.lewis.student.StudentApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-27T15:46:11.352-04:00  INFO 24868 --- [Student] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-27T15:46:11.369-04:00  INFO 24868 --- [Student] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2024-06-27T15:46:11.655-04:00  INFO 24868 --- [Student] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-27T15:46:11.660-04:00  INFO 24868 --- [Student] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-27T15:46:11.661-04:00  INFO 24868 --- [Student] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-06-27T15:46:11.745-04:00  INFO 24868 --- [Student] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-06-27T15:46:11.745-04:00  INFO 24868 --- [Student] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1014 ms
+2024-06-27T15:46:12.186-04:00  INFO 24868 --- [Student] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-27T15:46:12.195-04:00  INFO 24868 --- [Student] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-27T15:46:12.224-04:00  INFO 24868 --- [Student] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-27T15:46:12.227-04:00  INFO 24868 --- [Student] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-06-27T15:46:12.233-04:00  INFO 24868 --- [Student] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59e0215d
+2024-06-27T15:46:12.233-04:00  INFO 24868 --- [Student] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-06-27T15:46:12.234-04:00  WARN 24868 --- [Student] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-27T15:46:12.234-04:00  WARN 24868 --- [Student] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-27T15:46:12.293-04:00  INFO 24868 --- [Student] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-27T15:46:12.315-04:00  INFO 24868 --- [Student] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27T15:46:12.624-04:00  WARN 24868 --- [Student] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-27T15:46:13.723-04:00  INFO 24868 --- [Student] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-27T15:46:13.735-04:00  INFO 24868 --- [Student] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-06-27T15:46:13.801-04:00  INFO 24868 --- [Student] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-27T15:46:13.816-04:00  INFO 24868 --- [Student] [restartedMain] com.lewis.student.StudentApplication     : Started StudentApplication in 3.152 seconds (process running for 318.479)
+2024-06-27T15:46:13.820-04:00  INFO 24868 --- [Student] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-06-27T15:46:18.817-04:00  INFO 24868 --- [Student] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-27T15:46:18.818-04:00  INFO 24868 --- [Student] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-06-27T15:46:18.824-04:00  INFO 24868 --- [Student] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
