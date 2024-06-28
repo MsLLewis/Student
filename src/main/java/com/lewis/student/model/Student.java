@@ -3,7 +3,7 @@ package com.lewis.student.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table
+@Table(name="students")
 public class Student {
 
     @Id
@@ -16,6 +16,7 @@ public class Student {
     private String rollNumber;
 
     private String gender;
+    private String password;
 
     public Student(){}
 
@@ -35,6 +36,16 @@ public class Student {
         this.name = name;
         this.rollNumber = rollNumber;
         this.gender = gender;
+    }
+
+    /*
+    Constructor for Spring Boot Security
+     */
+    public Student(String name, String rollNumber, String gender, String password) {
+        this.name = name;
+        this.rollNumber = rollNumber;
+        this.gender = gender;
+        this.password = password;
     }
 
     public String getName() {
@@ -69,6 +80,14 @@ public class Student {
         this.id = id;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -76,6 +95,7 @@ public class Student {
                 ", name='" + name + '\'' +
                 ", rollNumber='" + rollNumber + '\'' +
                 ", gender='" + gender + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 }

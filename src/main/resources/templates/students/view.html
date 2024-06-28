@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>View Student</title>
+</head>
+<body>
+<h1>Student Details</h1>
+<div>
+    <p><strong>ID:</strong> <span th:text="${student.id}"></span></p>
+    <p><strong>Name:</strong> <span th:text="${student.name}"></span></p>
+    <p><strong>Roll Number:</strong> <span th:text="${student.rollNumber}"></span></p>
+    <p><strong>Gender:</strong> <span th:text="${student.gender}"></span></p>
+</div>
+<a href="/students/all">Back to List</a>
+</body>
+</html>
